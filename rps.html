@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock Paper Scissors Game</title>
+    <link rel="stylesheet" href="./rps.css">
+
+
+    <!-- <link rel="stylesheet" href="./rps.js"> -->
+    <!-- Proper way to link a javascript file is by using script -->
+    <script src="./rps.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h2>Rock Paper Scissors Game</h2>
+      </div>
+
+      <div class="game">
+        <h3>Your Choice: <span id="user-choice"></span></h3>
+        <h3>Computer Choice: <span id="computer-choice"></span></h3>
+        <h3>RESULT: <span id="result"></span></h3>
+
+        <div class="buttons">
+          <button class="btn" id="rock" data-choice="rock">rock</button>
+          <button class="btn" id="paper" data-choice="paper">paper</button>
+          <button class="btn" id="scissors" data-choice="scissors">
+            scissors
+          </button>
+          <button id="reset" data-choice="Reset" onclick="reset()">
+            Reset
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
